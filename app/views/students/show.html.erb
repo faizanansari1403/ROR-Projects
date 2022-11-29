@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @student.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @student.mobile %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @student.address %>
+</p>
+
+<% @student.marks.each do |i|%>
+Marks of M1 : <%= i.m1 %><br>
+Marks of M2 : <%= i.m2 %><br>
+Marks of M3 : <%= i.m3 %><br>
+Marks of M4 : <%= i.m4 %><br>
+Marks of M5 : <%= i.m5 %><br>
+Total : <%= i.total %><br>
+Percentage : <%= i.percentage %><br>
+<%end%>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

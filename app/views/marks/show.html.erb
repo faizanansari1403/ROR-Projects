@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>M1:</strong>
+  <%= @mark.m1 %>
+</p>
+
+<p>
+  <strong>M2:</strong>
+  <%= @mark.m2 %>
+</p>
+
+<p>
+  <strong>M3:</strong>
+  <%= @mark.m3 %>
+</p>
+
+<p>
+  <strong>M4:</strong>
+  <%= @mark.m4 %>
+</p>
+
+<p>
+  <strong>M5:</strong>
+  <%= @mark.m5 %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @mark.total %>
+</p>
+
+<p>
+  <strong>Percentage:</strong>
+  <%= @mark.percentage %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @mark.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_mark_path(@mark) %> |
+<%= link_to 'Back', marks_path %>
